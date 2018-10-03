@@ -28,13 +28,15 @@ public class QutapApplication {
 	return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any()).paths(PathSelectors.any()).build();
 	}
 	
-	@Bean
-	public ValidatingMongoEventListener validatingMongoEventListener() {
-	    return new ValidatingMongoEventListener(validator());
-	}
-
-	@Bean
-	public LocalValidatorFactoryBean validator() {
-	    return new LocalValidatorFactoryBean();
-	}
+	@Bean 
+    public ValidatingMongoEventListener validatingMongoEventListener() { 
+		System.out.println("validatingMongoEventListener() ---called");
+        return new ValidatingMongoEventListener(validator()); 
+    } 
+ 
+    @Bean 
+    public LocalValidatorFactoryBean validator() { 
+    	System.out.println("validator() ---called");
+        return new LocalValidatorFactoryBean(); 
+    } 
 }

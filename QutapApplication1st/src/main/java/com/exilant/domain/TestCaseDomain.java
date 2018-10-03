@@ -1,7 +1,8 @@
 package com.exilant.domain;
 
 import org.springframework.data.annotation.Id;
-
+import org.springframework.data.mongodb.core.mapping.Document;
+@Document(collection="TestCase")
 public class TestCaseDomain {
 	@Id
 	private String testCaseID;
@@ -11,7 +12,6 @@ public class TestCaseDomain {
 	private String testCaseCategory;
 	private String testCasePriority;
 	private String testCaseTag;
-	private String testcaseKeyword;
 	private String testSteps;
 	private String testData;
 	private String expectedResult;
@@ -58,12 +58,7 @@ public class TestCaseDomain {
 	public void setTestCaseTag(String testCaseTag) {
 		this.testCaseTag = testCaseTag;
 	}
-	public String getTestcaseKeyword() {
-		return testcaseKeyword;
-	}
-	public void setTestcaseKeyword(String testcaseKeyword) {
-		this.testcaseKeyword = testcaseKeyword;
-	}
+	
 	public String getTestSteps() {
 		return testSteps;
 	}

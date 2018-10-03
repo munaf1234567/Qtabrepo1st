@@ -8,7 +8,6 @@ public class TestCaseModel {
 	private String testCaseCategory;
 	private String testCasePriority;
 	private String testCaseTag;
-	private String testcaseKeyword;
 	private String testSteps;
 	private String testData;
 	private String expectedResult;
@@ -55,12 +54,7 @@ public class TestCaseModel {
 	public void setTestCaseTag(String testCaseTag) {
 		this.testCaseTag = testCaseTag;
 	}
-	public String getTestcaseKeyword() {
-		return testcaseKeyword;
-	}
-	public void setTestcaseKeyword(String testcaseKeyword) {
-		this.testcaseKeyword = testcaseKeyword;
-	}
+	
 	public String getTestSteps() {
 		return testSteps;
 	}
@@ -70,7 +64,6 @@ public class TestCaseModel {
 	public String getTestData() {
 		return testData;
 	}
-	
 	public void setTestData(String testData) {
 		this.testData = testData;
 	}
@@ -81,6 +74,7 @@ public class TestCaseModel {
 		this.expectedResult = expectedResult;
 	}
 	
+
 
 
 }

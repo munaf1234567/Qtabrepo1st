@@ -33,7 +33,7 @@ public class ProjectInfoController {
 	
 	@Autowired
 	ProjectInfoService projectInfoService;
-	
+
 	
 	@PostMapping("/saveProject")
 	public Response saveProjectInfo(@RequestBody ProjectInfoModel projectInfoModel,HttpServletRequest req) { 

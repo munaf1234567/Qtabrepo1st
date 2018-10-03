@@ -10,10 +10,11 @@ import org.springframework.data.mongodb.core.mapping.Field;
 public class ProjectInfoDomain {
 	@Id
 	private String projectId;
-	
+	 @NotEmpty
 	private String projectName;
+	 
 	private String moduleId;
-
+	@NotEmpty
 	private String moduleName;
 	private String description;
 	public String getProjectId() {
